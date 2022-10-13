@@ -2,12 +2,12 @@
 #include <unistd.h>
 
 int main() {
-    length = 128;
-    char name[length] = {0};
-    char flag[length] = {0};
+    int length = 128;
+    char name[length];
+    char flag[length];
   
     // read in flag
-    int file = fopen("flag.txt", "r");
+    FILE* file = fopen("flag.txt", "r");
     fread(flag, length, 1, file);
 
     // read in name

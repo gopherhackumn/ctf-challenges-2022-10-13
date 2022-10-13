@@ -28,7 +28,7 @@ while True:
             print("Which file would you like to see?")
             filename = input("[filename]: ")
 
-            output = check_output(f"cat docs/{filename}", shell=True)
+            output = check_output(f"cat /code/docs/{filename}", shell=True)
             print(output.decode("utf-8"))
 
         else:
