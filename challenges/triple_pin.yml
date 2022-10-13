@@ -1,7 +1,8 @@
 name: "Triple Pin"
 author: "michael"
 category: C
-description: Reverse-engineer the three PINs!
+description: Reverse-engineer the three PINs, and send them to the server to get the flag!
+connection_info: nc chal.gopherhack.com 5013
 value: 100
 type: standard
 
