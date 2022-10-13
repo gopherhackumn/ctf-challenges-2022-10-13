@@ -3,7 +3,7 @@ author: "michael"
 category: Python
 description: Get the flag.
 connection_info: nc chal.gopherhack.com 5012
-value: 60
+value: 80
 type: standard
 
 files:

@@ -6,7 +6,7 @@ value: 100
 type: standard
 
 files:
-  - ../rev/first_c/main
+  - ../rev/first_c/triple_pin
 
 flags:
   - "gopher{ab9acedb191c0a360929d702effe82ad}"

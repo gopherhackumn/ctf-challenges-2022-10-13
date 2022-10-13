@@ -2,7 +2,7 @@ name: "Warmup"
 author: "michael"
 category: Python
 description: What could the flag be?
-value: 20
+value: 30
 type: standard
 
 files:
