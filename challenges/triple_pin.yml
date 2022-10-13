@@ -1,0 +1,12 @@
+name: "Triple Pin"
+author: "michael"
+category: C
+description: Reverse-engineer the three PINs!
+value: 100
+type: standard
+
+files:
+  - ../rev/first_c/main
+
+flags:
+  - "gopher{ab9acedb191c0a360929d702effe82ad}"
