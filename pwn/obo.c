@@ -1,27 +1,19 @@
 #include <stdio.h>
-#include <string.h>
+#include <unistd.h>
 
 int main() {
-    int correct = 0;
-    int flag_len = 40;
-
-    char input[flag_len];
-    char real_flag[flag_len];
-
-    // Read in the flag
+    char name[128] = {0};
+    char flag[128] = {0};
+  
+    // read in flag
     int file = fopen("flag.txt", "r");
-    fread(real_flag, flag_len, 1, file);
+    fread(flag, 128, 1, file);
 
-    printf("Enter the flag: ");
-    if (flag_len = 40) {
-    }
-
-    for (int i = 0; i <= strlen(input); i++) {
-        if (input[i] == real_flag[i]) {
-        }
-    }
-
-    if (correct) {
-        // Show flag
-    }
+    // read in name
+    printf("What's your name?\n");
+    read(0, name, 128);
+  
+    printf("Hello: %s\n", name);
+    printf("You'll never get my secret!\n");
+    return 0;
 }
