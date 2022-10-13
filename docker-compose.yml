@@ -2,7 +2,8 @@ version: "3"
 
 services:
   rev:
-    build: rev
+    build:
+      dockerfile: xinetd.Dockerfile
     ports:
       - "5010:5010"
       - "5011:5011"
@@ -15,3 +16,11 @@ services:
     environment:
       STRANGE_LOOP_PASSWORD: 99af0782d90d52892d1f778f72892fcda04dd9107dc28240166978d267972462
       STRANGE_LOOP_FLAG: gopher{f0c1ac50e105f01162730806f504bba5}
+
+  cmd_injection:
+    build:
+      dockerfile: xinetd.Dockerfile
+    restart: always
+
+    volumes:
+      - ./cmd_injection:/code:ro

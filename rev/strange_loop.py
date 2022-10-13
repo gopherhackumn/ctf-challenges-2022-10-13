@@ -12,6 +12,8 @@ while not password_correct:
 
         if password == expected_password:
             password_correct = True
+        else:
+            print("Nope.")
 
     # Catch some errors
     except (EOFError, KeyboardInterrupt):

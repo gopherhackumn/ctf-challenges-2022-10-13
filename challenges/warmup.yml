@@ -1,0 +1,9 @@
+name: "Warmup"
+author: "michael"
+category: Python
+description: What could the flag be?
+value: 20
+type: standard
+
+files:
+  - ../rev/warmup.py
