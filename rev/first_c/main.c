@@ -16,15 +16,29 @@ int main(void) {
   scanf("%d %d %d", &a, &b, &c);
 
   if (a * 71 != 9869)
+#ifdef DEBUG
+    a = 139;
+#else
     die();
+#endif
 
   if (b << 12 != 1765376)
+#ifdef DEBUG
+    b = 431;
+#else
     die();
+#endif
 
-  int x = 123;
+  int x = a;
   for (int i = 0; i < b; ++i) {
     x = (x + 456 * b) % 999;
   }
+
+#ifdef DEBUG
+  printf("x: %d\n", x);
+  exit(0);
+#endif
+
   if (c != x)
     die();
 
