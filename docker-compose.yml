@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  rev:
+    build: rev
+    ports:
+      - "5010:5010"
+      - "5011:5011"
+    restart: always
+    volumes:
+      - ./rev:/code
+      - ./xinetd.d:/etc/xinetd.d
