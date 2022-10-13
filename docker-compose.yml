@@ -7,6 +7,11 @@ services:
       - "5010:5010"
       - "5011:5011"
     restart: always
+
     volumes:
-      - ./rev:/code
-      - ./xinetd.d:/etc/xinetd.d
+      - ./rev:/code:ro
+      - ./xinetd.d:/etc/xinetd.d:ro
+
+    environment:
+      STRANGE_LOOP_PASSWORD: 99af0782d90d52892d1f778f72892fcda04dd9107dc28240166978d267972462
+      STRANGE_LOOP_FLAG: gopher{f0c1ac50e105f01162730806f504bba5}
