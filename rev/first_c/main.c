@@ -15,7 +15,7 @@ int main(void) {
 
   scanf("%d %d %d", &a, &b, &c);
 
-  if (a * 24 != 3336)
+  if (a * 71 != 9869)
     die();
 
   if (b << 12 != 1765376)
