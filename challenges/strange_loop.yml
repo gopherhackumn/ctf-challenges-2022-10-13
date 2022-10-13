@@ -1,0 +1,13 @@
+name: "Strange Loop"
+author: "michael"
+category: Python
+description: How do I get out of this loop?
+connection_info: nc chal.gopherhack.com 5011
+value: 100
+type: standard
+
+files:
+  - ../rev/strange_loop.py
+
+flags:
+  - "gopher{f0c1ac50e105f01162730806f504bba5}"

@@ -20,7 +20,10 @@ services:
   cmd_injection:
     build:
       dockerfile: xinetd.Dockerfile
+    ports:
+      - "5012:5012"
     restart: always
 
     volumes:
       - ./cmd_injection:/code:ro
+      - ./xinetd:/etc/xinetd.d:ro
