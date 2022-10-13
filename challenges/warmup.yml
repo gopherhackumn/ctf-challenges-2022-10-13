@@ -7,3 +7,6 @@ type: standard
 
 files:
   - ../rev/warmup.py
+
+flags:
+  - "gopher{c624cd30cd8f178234e8b7f0fc3e605e}"

@@ -8,7 +8,7 @@ password_correct = False
 
 while not password_correct:
     try:
-        password = input("What is the password? ")
+        password = input("What is the password? ").encode("utf-8")
 
         if password == expected_password:
             password_correct = True

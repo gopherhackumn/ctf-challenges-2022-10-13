@@ -11,7 +11,7 @@ services:
 
     volumes:
       - ./rev:/code:ro
-      - ./xinetd.d:/etc/xinetd.d:ro
+      - ./xinetd:/etc/xinetd.d:ro
 
     environment:
       STRANGE_LOOP_PASSWORD: 99af0782d90d52892d1f778f72892fcda04dd9107dc28240166978d267972462
