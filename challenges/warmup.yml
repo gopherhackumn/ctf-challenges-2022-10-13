@@ -2,6 +2,7 @@ name: "Warmup"
 author: "michael"
 category: Python
 description: What could the flag be?
+connection_info: nc chal.gopherhack.com 5010
 value: 30
 type: standard
 
